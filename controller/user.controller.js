@@ -132,7 +132,7 @@ export const SendEmail = (email, name) => {
             html: `<img src="https://sdmntprukwest.oaiusercontent.com/files/00000000-f1fc-6243-9c7c-52b825350f85/raw?se=2025-08-14T22%3A58%3A48Z&sp=r&sv=2024-08-04&sr=b&scid=d39f4d62-fc76-5080-a137-7abf9d2a9aa3&skoid=5c72dd08-68ae-4091-b4e1-40ccec0693ae&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-14T21%3A17%3A29Z&ske=2025-08-15T21%3A17%3A29Z&sks=b&skv=2024-08-04&sig=6dZpx/jT5oM9aRn3dW/g4T6T5z5aCDaelx9MOH0qKVc%3D" width="300" style="border-radius:8px;"/>
             <h4>Dear ${name}</h4>
             <p>Thank You for ragistration. To Verify your account Please Click on Below Button</p>
-            <form method="post" action="https://skillhub-project-backend.onrender.com/user/verification">
+            <form method="post" action="https://skillhub-mern-project-backend.onrender.com/user/verification">
               <input type="hidden" name="email" value="${email}"/>
               <button type="submit" style="background-color: green; color:white; width:100px;padding:12px; border: none; border: 1px solid grey; border-radius:10px;">Verify</button>
             </form>
