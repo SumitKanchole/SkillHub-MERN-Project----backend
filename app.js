@@ -20,7 +20,7 @@ const httpServer = createServer(app);
 // ✅ Socket.io setup
 const io = new Server(httpServer, {
   cors: {
-    origin: ["http://localhost:3000","https://skillhub-mern-project-backend.onrender.com"], // React frontend port
+    origin: ["http://localhost:3000","https://skillhub-mern-project-frontend.onrender.com"], // React frontend port
     credentials: true,
   },
 });
