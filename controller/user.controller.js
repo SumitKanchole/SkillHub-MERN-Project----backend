@@ -228,7 +228,8 @@ export const getProfile = async (request, response, next) => {
 // user.controller.js
 export const getAllUsers = async (request, response) => {
   try {
-    const users = await User.find();
+      const users = await User.find();
+      console.log("users : ", users);
     const loggedInUserId = request.user?._id; // agar login kiya hai to bhejo
     response.status(200).json({ success: true, users, loggedInUserId });
   } catch (error) {

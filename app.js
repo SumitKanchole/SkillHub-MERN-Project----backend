@@ -20,7 +20,7 @@ const httpServer = createServer(app);
 // ✅ Socket.io setup
 const io = new Server(httpServer, {
   cors: {
-    origin: ["http://localhost:3000","https://skillhub-mern-project-frontend.onrender.com"], // React frontend port
+    origin: "https://skillhub-mern-project-frontend.onrender.com", // React frontend port
     credentials: true,
   },
 });
@@ -325,7 +325,7 @@ mongoose
     // Start Server
     httpServer.listen(process.env.PORT, () => {
       console.log(`🚀 Server & Socket.IO running on port ${process.env.PORT}`);
-      console.log(`📡 Socket.IO CORS origin: https://skillhub-mern-project-backend.onrender.com`);
+      console.log(`📡 Socket.IO CORS origin: https://skillhub-mern-project-frontend.onrender.com`);
     });
   })
   .catch((err) => {
