@@ -21,7 +21,7 @@ const httpServer = createServer(app);
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:3000", // React frontend port
+    origin: ["https://skillhub-mern-project-backend.onrender.com","http://localhost:3000"], // React frontend port
     credentials: true,
   },
 });
@@ -306,7 +306,7 @@ mongoose.connect(process.env.DB_URL, {
     // Middlewares
     app.use(express.json({ limit: "100mb" }));
     app.use(cookieParser());
-    app.use(cors({ origin: "http://localhost:3001", credentials: true }));
+    app.use(cors({ origin: ["https://skillhub-mern-project-frontend.onrender.com","http://localhost:3001"], credentials: true }));
 
     // Routes
     app.use("/user", UserRouter);
